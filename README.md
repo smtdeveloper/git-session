@@ -5,69 +5,69 @@ GIT KOMUTLARI
 
  - KULLANICI BILGILERI :
     
-    git config --global user.name "kullanıcı adı / rumuz"
-    git config --global user.email "E-posta"
-    git config --list             # Calisma ve kullanici bilgilerini göster
+    git config --global user.name "kullanıcı adı / rumuz" <br>
+    git config --global user.email "E-posta"<br>
+    git config --list             # Calisma ve kullanici bilgilerini göster<br>
 
-
+<br><br>
 
  - YEREL DEPO :
+<br><br>
+    git add <DOSYA(LAR)>          # Yeni ve degismis dosyalari guncellenecekler listesine ekle<br>
+    git add .                     # Yeni ve degismis dosyalarin tumunu guncellenecekler listesine ekle<br>
+    git add -u                    # Silinmis ve degistirilmis dosyalari guncellenecekler listesine ekle<br>
+    git rm <DOSYA(LAR)>           # Calisma agacında ve dizinde dosyalari kaldir<br>
+    git rm -f                     # Calisma agacında ve dizinde dosyalari zorla kaldir<br>
+    git commit -m 'not'           # Değisiklikleri depoya kaydet<br>
+    git commit -a -m "not"        # Tum değisiklikleri depoya kaydet<br>
+    cat .gitignore                # Dosyayi depoya ekleme<br>
+    git rm --cached <DOSYA>       # Dosyayi takip etmeyi birak<br>
+    git diff                      # Degisiklikler arasindaki farklari goster<br>
+    git diff --cached             # Listeye Eklenen Değişiklikler Arasındaki Farkları Göster<br>
+    git status                    # Calisma agacindaki durumu goster<br>
+    git log                       # Islem gunlugunu goster <br>
 
-    git add <DOSYA(LAR)>          # Yeni ve degismis dosyalari guncellenecekler listesine ekle
-    git add .                     # Yeni ve degismis dosyalarin tumunu guncellenecekler listesine ekle
-    git add -u                    # Silinmis ve degistirilmis dosyalari guncellenecekler listesine ekle
-    git rm <DOSYA(LAR)>           # Calisma agacında ve dizinde dosyalari kaldir
-    git rm -f                     # Calisma agacında ve dizinde dosyalari zorla kaldir
-    git commit -m 'not'           # Değisiklikleri depoya kaydet
-    git commit -a -m "not"        # Tum değisiklikleri depoya kaydet
-    cat .gitignore                # Dosyayi depoya ekleme
-    git rm --cached <DOSYA>       # Dosyayi takip etmeyi birak
-    git diff                      # Degisiklikler arasindaki farklari goster
-    git diff --cached             # Listeye Eklenen Değişiklikler Arasındaki Farkları Göster
-    git status                    # Calisma agacindaki durumu goster
-    git log                       # Islem gunlugunu goster 
-
-    
+    <br><br><br>
     
  - UZAK DEPO :
- 
-   git clone <ADRES>              # Uzaktaki depoyu klonla
-   git pull                       # Depodaki son degisiklikleri al
-   git push                       # Yereldeki degisiklikleri uzak depoda uygula (origin master)komutuda eklenebilir
-   
+ <br><br>
+   git clone <ADRES>              # Uzaktaki depoyu klonla<br>
+   git pull                       # Depodaki son degisiklikleri al<br>
+   git push                       # Yereldeki degisiklikleri uzak depoda uygula (origin master)komutuda eklenebilir<br>
+   <br><br><br>
    
    
       
  - DAL (BRANCH) KOMUTLARI :
+ <br><br>
+   git branch <DAL ADI>           # Dal olustur<br>
+   git branch                     # Dallari goster<br>
+   git checkout <DAL ADI>         # Calisilan dali degistir   <br> 
+   git merge <DAL ADI>            # Dallari birlestir<br>
+   git branch -d <DAL ADI>        # Dal sil<br>
  
-   git branch <DAL ADI>           # Dal olustur
-   git branch                     # Dallari goster
-   git checkout <DAL ADI>         # Calisilan dali degistir    
-   git merge <DAL ADI>            # Dallari birlestir
-   git branch -d <DAL ADI>        # Dal sil
- 
- 
+ <br><br><br>
     
  - DIGER KOMUTLAR :
+ <br><br>
+   git --version                  # Git versiyon numarasını  göster<br>
+   git --help                     # Git yardım sayfasını göster <br>
+   git remote -v                  # Uzak depo adresini ver<br>
+   git log --since=<LIMIT>        # Iki zaman araligindaki commitleri goster<br>
+   git shortlog -s                # Commit yapanlarin isim ve commit sayilarini goster<br>
+   git shortlog -e                # Commit yapanlarin isim ve E-postalarini goster<br>
+   git shortlog -n                # Commit yapanlari commit sayisina gore sirala <br>
+   git reset -- hard HEAD         # Son yapılan degisiklikleri iptal ederek HEAD geri don<br>
+   git checkout -- <DOSYA>        # Sadece bir dosyayi depodaki haline geri getir<br>
+   git revert HEAD                # Son yapilan commiti geri al<br>
+   git stash save                 # Commit yapilmamis degisiklikleri kaydet<br>
+   git stash pop                  # Commit yapilmamis degisikliklere geri don<br>
+   git stash list                 # Commit yapilmamis degisiklikleri listele<br>
+   git stash drop                 # Commit yapilmamis degisiklikleri kaldır<br>
+   git grep                       # Mevcut dal icersinde kelime veya ifade arama<br>
+   gitk                           # Git gorsellestirme programi<br>
  
-   git --version                  # Git versiyon numarasını  göster
-   git --help                     # Git yardım sayfasını göster 
-   git remote -v                  # Uzak depo adresini ver
-   git log --since=<LIMIT>        # Iki zaman araligindaki commitleri goster
-   git shortlog -s                # Commit yapanlarin isim ve commit sayilarini goster
-   git shortlog -e                # Commit yapanlarin isim ve E-postalarini goster
-   git shortlog -n                # Commit yapanlari commit sayisina gore sirala 
-   git reset -- hard HEAD         # Son yapılan degisiklikleri iptal ederek HEAD geri don
-   git checkout -- <DOSYA>        # Sadece bir dosyayi depodaki haline geri getir
-   git revert HEAD                # Son yapilan commiti geri al
-   git stash save                 # Commit yapilmamis degisiklikleri kaydet
-   git stash pop                  # Commit yapilmamis degisikliklere geri don
-   git stash list                 # Commit yapilmamis degisiklikleri listele
-   git stash drop                 # Commit yapilmamis degisiklikleri kaldır
-   git grep                       # Mevcut dal icersinde kelime veya ifade arama
-   gitk                           # Git gorsellestirme programi
- 
- 
+ <br><br><br>
     
 NOTLAR
 --------
@@ -76,7 +76,7 @@ NOTLAR
 
     
     
-    
+    <br><br><br>
     
 KAYNAKCA
 -----------
