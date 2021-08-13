@@ -34,6 +34,7 @@ Google Play uygulamalarım
 Gone camping! :tent: Be back soon.
 
 That is so funny! :joy:
+<br>
 :bowtie: :bowtie:	😄 :smile:	😆 :laughing:
 😊 :blush:	😃 :smiley:	☺️ :relaxed:
 😏 :smirk:	😍 :heart_eyes:	😘 :kissing_heart:
@@ -76,3 +77,7 @@ That is so funny! :joy:
 🖕 :fu:	🚶 :walking:	🏃 :runner:
 🏃 :running:	👫 :couple:	👪 :family:
 👬 :two_men_holding_hands:	👭 :two_women_holding_hands:	💃 :dancer:
+
+<h3> Otomatik URL Bağlantısı </h3>
+https://github.com/smtdeveloper
+
