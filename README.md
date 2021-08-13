@@ -1,6 +1,7 @@
 # git-session
  
-<h3> Emoji Kısa Kodlarını Kullanma </h3>
+
+ ### Emoji Kısa Kodlarını Kullanma 
 
 
 Gone camping! :tent: Be back soon.
@@ -50,7 +51,7 @@ That is so funny! :joy:
 🏃 :running:	👫 :couple:	👪 :family:
 👬 :two_men_holding_hands:	👭 :two_women_holding_hands:	💃 :dancer:
 
-Kaynak : https://www.webfx.com/tools/emoji-cheat-sheet/
+# Kaynak : https://www.webfx.com/tools/emoji-cheat-sheet/
 
 <h3> Otomatik URL Bağlantısı </h3>
 https://github.com/smtdeveloper or  <a href="https://www.instagram.com/smtcoder/"> instagram
